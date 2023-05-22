@@ -24,21 +24,46 @@
         <div id="formSection">
 
             <div id="headingContainer">
-                
                     <h1>This is not a real online service!!!</h1>
-
-                   
-                <p>    
-                    Sign up now to get started.
-                </p>
+                    <h2>    
+                        Sign up now to get started.
+                    </h2>
             </div>
 
             <div id="formContainer">
+                <h3>Let's do it!</h3>
+                <form action="example.com/path" method="get" id="signUpForm">
+                    <label for="firstName" class="left">
+                        <span>First name</span>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </label>
+                    <label for="lastName" class="right">
+                        <span>Last name</span>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </label>
+                    <label for="email" class="left">
+                        <span>E-mail</span>
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <label for="phone" class="right">
+                        <span>Phone number</span>
+                        <input type="tel" name="phone" id="phone" required>
+                    </label>
+                    <label for="password" class="left">
+                        <span>Password</span>
+                        <input type="password" name="password" id="password" required>
+                    </label>
+                    <label for="confirmPassword" class="right">
+                        <span>Confirm password</span>
+                        <input type="password" name="cofirmPassword" id="confirmPassword" required>
+                    </label>
 
-            </div id="confimContainer">
+               
+            </div>
 
-            <div>
-
+            <div id="confirmContainer">
+                <input type="submit" value="submit" form="signUpForm" onclick="submitForm()"> </form>
+                <p>Already have an account? <a href="#">Log In</a></p>
             </div>
 
         </div>
@@ -51,3 +76,4 @@
     </footer>
 </body>
 </html>
+<script src="script.js"></script>

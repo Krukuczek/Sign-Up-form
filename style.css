@@ -41,9 +41,13 @@ main{
     bottom: 5%;
     font-size: 1em;
 }
-#imageAuthor a{
+a{
     color: magenta;
     text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    color:white;
 }
 
 #formSection{
@@ -54,12 +58,92 @@ main{
     display: flex;
     flex-direction: column;
 }
-@media (max-width: 600px){
-    #imageSection, #formSection{
-        flex:100%;
-    } 
-}
 
 h1{
+    font-size: 1.5em;
     text-align: center;
+}
+#headingContainer{
+    position: relative;
+    flex:25%;
+}
+#headingContainer h2{
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    left: 10;
+    margin: auto;
+    font-size: 1em;
+}
+#formContainer{
+    flex:50%;
+    background-color: rgb(100, 59, 103);
+    box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#confirmContainer{
+    flex:25%;
+}
+h3{
+    text-align: left;
+    padding-left: 2em;
+    font-size: 1.5em;
+}
+#signUpForm{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 3em;
+    padding-top: 1em;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+#formContainer input{
+    width: 75%;
+    border: solid 3px black;
+    border-radius: 5px;
+}
+#formContainer input:focus{
+    border: solid 3px magenta;
+    outline: 0px;
+}
+#formContainer input:invalid{
+    background-color: rgb(182, 100, 100);
+    border-color: rgb(165, 31, 31);
+}
+#formContainer input:valid{
+    background-color: rgb(148, 208, 149);
+    border-color: rgb(43, 145, 20);
+}
+
+@media (max-width: 600px){
+    #headingContainer h1{
+        font-size: 1em;
+    }
+    #headingContainer h2{
+        font-size: 0.75em;
+    }
+    #imageSection, #formSection{
+        flex:100%;
+    }
+    #signUpForm{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding: 20px;
+    }
+    #formContainer label{
+        width: 100%;
+        text-align: center;
+    }
+    #formContainer input{
+        align-self: center;
+    }
+    h3{
+        padding-left: 0px;
+        text-align: center;
+    }
 }
