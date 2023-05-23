@@ -103,22 +103,52 @@ label{
 }
 #formContainer input{
     width: 75%;
-    border: solid 3px black;
+    border: solid 2px black;
+    background-color: rgb(230, 229, 229);
+    color: black;
     border-radius: 5px;
-}
-#formContainer input:focus{
-    border: solid 3px magenta;
     outline: 0px;
 }
-#formContainer input:invalid{
-    background-color: rgb(182, 100, 100);
-    border-color: rgb(165, 31, 31);
+#formContainer .valid{
+    border: green 2px solid;
+    background-color: lightgreen;
 }
-#formContainer input:valid{
-    background-color: rgb(148, 208, 149);
-    border-color: rgb(43, 145, 20);
+#formContainer .invalid{
+    border: red 2px solid;
+    background-color: lightcoral;
+}
+#buttonLoginContainer{
+    text-align: center;
+    padding: 2em;
+}
+#buttonLoginContainer input{
+    font-family: 'pacifico';
+    background-color: magenta;
+    border: none;
+    color:lightgrey;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.3em 1em 0.3em 1em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+#buttonLoginContainer input:hover{
+    background-color: lightgray;
+    color: magenta;
+}
+#errorMessage{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 0.5em;
+    text-align: center;
+    height: 1em;
+    color:lightcoral;
 }
 
+footer{
+    background-color: rgba(0,0,0,30%);
+    text-align: center;
+    padding: 0.5em;
+}
 @media (max-width: 600px){
     #headingContainer h1{
         font-size: 1em;

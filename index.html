@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Sign-Up Form</title>
 </head>
+
 <body>
 
 
@@ -15,7 +17,10 @@
         <div id="imageSection">
             <div id="contentView">
                 <img id="odinLogo" src="odin-lined.png" alt="TheOdinLogo">
-                <span id="imageAuthor">Photo by <a href="https://unsplash.com/@santesson89?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrea De Santis</a> on <a href="https://unsplash.com/photos/0hjBFG5zJts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                <span id="imageAuthor">Photo by <a
+                        href="https://unsplash.com/@santesson89?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrea
+                        De Santis</a> on <a
+                        href="https://unsplash.com/photos/0hjBFG5zJts?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                 </span>
             </div>
         </div>
@@ -24,56 +29,63 @@
         <div id="formSection">
 
             <div id="headingContainer">
-                    <h1>This is not a real online service!!!</h1>
-                    <h2>    
-                        Sign up now to get started.
-                    </h2>
+                <h1>This is not a real online service!!!</h1>
+                <h2>
+                    Sign up now to get started.
+                </h2>
             </div>
 
             <div id="formContainer">
                 <h3>Let's do it!</h3>
-                <form action="example.com/path" method="get" id="signUpForm">
-                    <label for="firstName" class="left">
-                        <span>First name</span>
+                <form action="#" method="get" id="signUpForm">
+                    <label for="firstName">
+                        <span>First name*
+                        </span>
                         <input type="text" name="firstName" id="firstName" required>
                     </label>
-                    <label for="lastName" class="right">
-                        <span>Last name</span>
+                    <label for="lastName">
+                        <span>Last name* 
+                            <span id="lastNameAdditional">
+
+                            </span>
+                        </span>
                         <input type="text" name="lastName" id="lastName" required>
                     </label>
-                    <label for="email" class="left">
-                        <span>E-mail</span>
-                        <input type="email" name="email" id="email" required>
+                    <label for="email">
+                        <span>E-mail*</span>
+                        <input type="email" name="email" id="email" required placeholder="example@email.com">
                     </label>
-                    <label for="phone" class="right">
-                        <span>Phone number</span>
+                    <label for="phone">
+                        <span>Phone number*</span>
                         <input type="tel" name="phone" id="phone" required>
                     </label>
-                    <label for="password" class="left">
-                        <span>Password</span>
+                    <label for="password">
+                        <span>Password*
+                        </span>
                         <input type="password" name="password" id="password" required>
                     </label>
-                    <label for="confirmPassword" class="right">
-                        <span>Confirm password</span>
+                    <label for="confirmPassword">
+                        <span>Confirm password*</span>
                         <input type="password" name="cofirmPassword" id="confirmPassword" required>
                     </label>
 
-               
+
             </div>
 
             <div id="confirmContainer">
-                <input type="submit" value="submit" form="signUpForm" onclick="submitForm()"> </form>
-                <p>Already have an account? <a href="#">Log In</a></p>
+                <div id="errorMessage"></div>
+                <div id="buttonLoginContainer">
+                    <input type="submit" value="Submit" form="signUpForm" id="submitButton"> </form>
+                    <p>Already have an account? <a href="https://github.com/Krukuczek/Sign-Up-form">Log In</a></p>
+                </div>
             </div>
-
+            <footer>
+                Designed by <a href="https://github.com/Krukuczek">Krukuczek </a> &copy;
+            </footer>
         </div>
 
     </main>
-
-
-    <footer>
-
-    </footer>
 </body>
+
 </html>
 <script src="script.js"></script>
